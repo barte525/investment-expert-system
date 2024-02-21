@@ -6,7 +6,7 @@ INPUT_TO_RISK_MAPPING = {
     '3': 'big',
 }
 
-INPUT_TO_COMMITMENT_MAPPING = {
+INPUT_TO_INVOLVEMENT_MAPPING = {
     '1': 'small',
     '2': 'medium',
     '3': 'big',
@@ -34,7 +34,7 @@ def run_app() -> None:
     )
     commitment = switch_case_input(
         '\nSpecify an acceptable level of involvement:\n1: small\n2: medium\n3: big\n',
-        INPUT_TO_COMMITMENT_MAPPING
+        INPUT_TO_INVOLVEMENT_MAPPING
     )
     means = numeric_input("\nEnter funds for investment (in polish zloty):\n")
     investment_time = numeric_input("\nEnter the investment time (in months):\n")
